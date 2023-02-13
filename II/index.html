@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Poppins:ital,wght@0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="app.js"></script>
+    <title>Page 2</title>
+  </head>
+  <body>
+    <audio autoplay>
+      <source src="Lines.mp3" type="audio/mp3" />
+      Your browser does not support the audio element.
+    </audio>
+    <div class="container">
+      <section id="one">
+        <h1 class="hidden">Scroll Down</h1>
+      </section>
+      <section id="two">
+        <h1 class="hidden">Kepo Yah?</h1>
+      </section>
+      <section id="three">
+        <h1 class="hidden">Kepo Banget?</h1>
+      </section>
+      <section id="four">
+        <h1 class="hidden">Cius Kepo?</h1>
+      </section>
+      <section id="five">
+        <h1 class="hidden">Cius Nih Kepo Banget?</h1>
+      </section>
+      <section id="six">
+        <h1 class="hidden">Yaudh Iyah Abis Ini</h1>
+      </section>
+      <section id="seven">
+        <h1 class="hidden">Tapi Boong</h1>
+      </section>
+      <section id="eight">
+        <h1 class="hidden">Nah, Im Just Kidding</h1>
+      </section>
+      <section id="nine">
+        <h1 class="hidden">
+          Happy Valentine's Day, I'm sorry if I've been annoying the past few
+          days, but I really think of you that I'm really close to you. I always
+          feel warm around you, I always spend my time alone before I meet you,
+          but you make that feeling disappear completely. as otto said when we
+          watched the movie that time.
+        </h1>
+      </section>
+      <section id="ten">
+        <h1 class="hidden">
+          "I was black and white before I met <span>kia</span>, and
+          <span>kia</span> is the <span>color</span>"
+        </h1>
+      </section>
+      <section id="eleven">
+        <h1 class="hidden">I have something for you</h1>
+      </section>
+      <section id="twelve">
+        <h1 class="hidden">
+          Move your pointer to the<span> > ◻ < </span> center, then scroll down.
+        </h1>
+      </section>
+      <section id="thirteen">
+        <img
+          id="image"
+          class="hidden"
+          src="fillheart.png"
+          alt=""
+          onmouseover="ubahText()"
+        />
+      </section>
+      <script>
+        const img = document.getElementById("image");
+        let isButtonAdded = false;
+
+        function ubahText() {
+          if (!isButtonAdded) {
+            const btn = document.createElement("button");
+            btn.innerHTML = "♡";
+            document.getElementById("thirteen").appendChild(btn);
+            isButtonAdded = true;
+          }
+          const btn = document.querySelector("button");
+
+          function redirectToPage() {
+            window.location.href = "../III/index.html";
+          }
+
+          btn.addEventListener("click", redirectToPage);
+        }
+      </script>
+    </div>
+  </body>
+</html>

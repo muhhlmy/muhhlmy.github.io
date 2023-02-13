@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.pageone {
+  background-color: #e90064;
+  min-height: 20vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pagetwo {
+  background-color: white;
+  min-height: 80vh;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+
+.message {
+  color: white;
+  font-size: 50px;
+}
+
+.title {
+  opacity: 0;
+  margin-top: -10vh;
+  display: flex;
+  padding: 5px;
+  font-size: 30px;
+  color: #e90064;
+  justify-content: center;
+  animation: fadeIn 1s 20s forwards;
+}
+
+#textarea {
+  opacity: 0;
+  display: flex;
+  margin-top: -40vh;
+  width: 700px;
+  height: 200px;
+  font-size: 20px;
+  color: #e90064;
+  padding: 20px;
+  border-color: #e90064;
+  border-radius: 15px;
+  animation: fadeIn 1s 20s forwards;
+}
+
+#textarea::placeholder {
+  opacity: 0;
+  opacity: 0.8;
+  color: #e90064;
+  animation: fadeIn 1s 20s forwards;
+}
+
+#textarea:focus {
+  opacity: 0;
+  border-color: #e90064;
+  outline: none;
+  animation: fadeIn 1s 20s forwards;
+}
+
+button {
+  font-size: 15px;
+  opacity: 0;
+  top: 85vh;
+  right: 85vh;
+  position: absolute;
+  width: 200px;
+  height: 40px;
+  border: 0;
+  background-color: #e90064;
+  border-radius: 10px;
+  color: #ffffff;
+  font-style: bold;
+  transition: 0.5s;
+  animation: fadeIn 1s 20s forwards;
+}
+
+button a {
+  opacity: 0;
+  color: white;
+  text-decoration: none;
+  font-size: 15px;
+  animation: fadeIn 1s 20s forwards;
+}
+
+button:hover {
+  opacity: 0;
+  color: #e90064;
+  background-color: white;
+  border: 1px solid #e90064;
+  cursor: pointer;
+  animation: fadeIn 1s 20s forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+.pagetwo img#gambar1 {
+  opacity: 0;
+  display: flex;
+  position: absolute;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  align-self: center;
+  justify-self: center;
+  width: 300px;
+  animation: fadeIn 1s forwards, fadeOut 1s 5s forwards;
+}
+
+.pagetwo img#gambar2 {
+  opacity: 0;
+  display: flex;
+  position: absolute;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  align-self: center;
+  justify-self: center;
+  width: 300px;
+  animation: fadeIn 1s 8s forwards, fadeOut 1s 12s forwards;
+}
+
+.pagetwo img#gambar3 {
+  opacity: 0;
+  display: flex;
+  position: absolute;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  align-self: center;
+  justify-self: center;
+  width: 300px;
+  animation: fadeIn 1s 15s forwards, fadeOut 1s 20s forwards;
+}

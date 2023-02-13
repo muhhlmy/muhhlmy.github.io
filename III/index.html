@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Poppins:ital,wght@0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>Page 3</title>
+  </head>
+  <body>
+    <audio autoplay>
+      <source src="Anchor.mp3" type="audio/mp3" />
+      Your browser does not support the audio element.
+    </audio>
+    <div class="container">
+      <section class="pageone">
+        <h1 class="message">♡ ♡ ♡</h1>
+      </section>
+      <section class="pagetwo">
+        <img
+          src="https://i.pinimg.com/564x/28/24/45/282445f589db3a74f4566d0b3d7c66a5.jpg"
+          alt=""
+          id="gambar1"
+        />
+        <img
+          src="https://i.pinimg.com/564x/74/d2/d8/74d2d8d1d784eb7afc384475d01c60dd.jpg"
+          alt=""
+          id="gambar2"
+        />
+        <img
+          src="https://i.pinimg.com/564x/70/90/42/7090424fe5c9b1fbfb5fba1ce2187bee.jpg"
+          alt=""
+          id="gambar3"
+        />
+        <h1 class="title">Write anything</h1>
+        <textarea
+          id="textarea"
+          name="test"
+          id="message"
+          cols="70"
+          rows="15"
+          placeholder="Anything..."
+        ></textarea>
+        <button
+          href="#"
+          onclick="location.href='https://wa.me/6287753990027?text=' + encodeURIComponent(document.getElementById('textarea').value)"
+        >
+          Send
+        </button>
+      </section>
+    </div>
+
+    <script>
+      $(document).ready(function () {
+        var texts = [
+          "Well, this is the final page",
+          "Not much but",
+          "It's all I can do",
+          "But I promise",
+          "I'll make a better one someday",
+          "Now... how you feel?",
+        ];
+        var counter = 0;
+
+        function changeText() {
+          $(".message").fadeOut(500, function () {
+            $(this).text(texts[counter]).fadeIn(500);
+            if (counter === texts.length - 1) {
+              clearInterval(intervalId);
+            }
+            counter = (counter + 1) % texts.length;
+          });
+        }
+
+        var intervalId = setInterval(changeText, 3000);
+      });
+    </script>
+  </body>
+</html>
