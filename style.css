@@ -175,6 +175,10 @@ body {
         font-size: 15px;
     }
 
+    .navbar a:hover {
+    font-size: 0px;
+    }
+
     .container {
         /* background-color: aquamarine; */
         flex-direction: column;
