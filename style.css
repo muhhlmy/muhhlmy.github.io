@@ -176,7 +176,7 @@ body {
     }
 
     .navbar a:hover {
-    font-size: 0px;
+        font-size: 15px;
     }
 
     .container {
@@ -253,12 +253,12 @@ body {
     }
     
     .container .socialmedia .buttonlinks img{
-    width: 45px;
-    height: 45px;
+        width: 45px;
+        height: 45px;
     }
 
     .container .socialmedia .buttonlinks img:hover{
-    width: 45px;
-    height: 45px;
+        width: 45px;
+        height: 45px;
     }
 }
