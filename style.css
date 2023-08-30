@@ -25,7 +25,7 @@ body {
     z-index: 1;
     /* background-color: aqua; */
     position: absolute;
-    top: -500px;
+    top: -650px;
     left: 800px;
     pointer-events: none;
     /* Add any other styling you want for the blob */
@@ -69,6 +69,7 @@ body {
 
 .container {
     /* background-color: yellowgreen; */
+    box-sizing: border-box;
     display: flex;
     align-items: center;
     margin-top: 400px;
@@ -94,16 +95,29 @@ body {
 }
 
 .container .socialmedia {
+    box-sizing: border-box;
     z-index: 3;
     width: 30%;
     height:155px;
-    /* background-color: black; */
+    /* background-color: red; */
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-left: 250px;
 }
 
+.container .socialmedia .footer {
+    background-color: #6755F2;
+    width: 280px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.container .socialmedia .footer h1{
+    color: white;
+    box-sizing: border-box;
+}
 
 .container .socialmedia .buttonlinks{
     background: none;
@@ -113,6 +127,7 @@ body {
     cursor: pointer;
     display: flex;
     justify-content: space-between;
+    margin-top: 30px;
 }
 .container .socialmedia .buttonlinks button{
     background: none;
@@ -331,7 +346,7 @@ body {
     .container .namecard h2{
         /* background-color: rgb(199, 65, 65);         */
         margin-left: 0;
-        font-size: 20px;
+        font-size: 21px;
         text-align: center;
         /* background-color: #6755F2; */
     }  
