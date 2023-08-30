@@ -251,6 +251,10 @@ body {
     .container .socialmedia .buttonlinks img{
     width: 45px;
     height: 45px;
-    transition: .3s;
-}
+    }
+
+    .container .socialmedia .buttonlinks img:hover{
+    width: 45px;
+    height: 45px;
+    }
 }
